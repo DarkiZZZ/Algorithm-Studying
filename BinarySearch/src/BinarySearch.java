@@ -14,11 +14,25 @@ public class BinarySearch {
             exampleList.add(r);
         }
         Collections.sort(exampleList);
-        System.out.println(exampleList);
+        //System.out.println(exampleList);
+        //Scanner scanner = new Scanner(System.in);
+        //int item = scanner.nextInt();
+        //System.out.println(binarySearch(item, exampleList));
+
+        //=================================================================
+
+        ArrayList<Integer> exampleList2 = new ArrayList<>(1000);
+        for (int i = 0; i < 1000; i++){
+            Integer r = random.nextInt() % 1000;
+            exampleList2.add(r);
+        }
+        Collections.sort(exampleList2);
+        System.out.println(exampleList2);
 
         Scanner scanner = new Scanner(System.in);
         int item = scanner.nextInt();
-        System.out.println(binarySearch(item, exampleList));
+        System.out.println(binarySearch(item, exampleList2));
+
     }
 
     //returns index of item in collection
